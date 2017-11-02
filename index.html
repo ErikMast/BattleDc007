@@ -22,7 +22,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
   </head>
 
   <body id="page-top">
@@ -44,7 +45,7 @@
               <a class="nav-link js-scroll-trigger" href="#zalen">De zalen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#timelapse">Time-lapse</a>
+              <a class="nav-link js-scroll-trigger" href="#timelapse">Timelapse</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#bedrijven">Bedrijven</a>
@@ -63,7 +64,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To Our Future Castle</div>
           <div class="intro-heading text-uppercase">A life long learning!</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+          <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
         </div>
       </div>
     </header>
@@ -123,87 +124,121 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 zalen-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
               </div>
-              <img class="img-fluid" src="img/portfolio/congreszaal-hetkasteel-groningen.jpg" alt="">
-            </a>
+
+
+
+              <img id="foto1" class="img-fluid" src="img/portfolio/zaal1.jpg" alt="">
+              <script>
+                $( "#foto1" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/congreszaal.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal1.jpg");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
               <h4>Congreszaal</h4>
               <!-- <p class="text-muted">Illustration</p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/Borrelopstelling-Hermanszaal-van-onderaf.jpg" alt="">
-            </a>
+              <img id="foto2" class="img-fluid" src="img/portfolio/zaal2.jpg" alt="">
+              <script>
+                $( "#foto2" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/hermanzaal.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal2.jpg");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
               <h4>W.F. Hermanszaal</h4>
               <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/Bestuurskamer-1024x682.jpg" alt="">
-            </a>
+              <img id="foto3" class="img-fluid" src="img/portfolio/zaal6.jpg" alt="">
+              <script>
+                $( "#foto3" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/bestuurskamer.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal6.jpg");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
               <h4>Bestuurskamer</h4>
-              <!-- <p class="text-muted">Identity</p> -->
+              <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/Zaal-104.jpg" alt="">
-            </a>
+              <img id="foto4" class="img-fluid" src="img/portfolio/zaal3.png" alt="">
+              <script>
+                $( "#foto4" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/zaal-2.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal3.png");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
               <h4>Castle wing</h4>
-              <!-- <p class="text-muted">Branding</p> -->
+              <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/Zaal-112.jpg" alt="">
-            </a>
+              <img id="foto5" class="img-fluid" src="img/portfolio/zaal4.png" alt="">
+              <script>
+                $( "#foto5" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/Zaal-4.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal4.png");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
               <h4>Vergaderkasteel</h4>
-              <!-- <p class="text-muted">Website Design</p> -->
+              <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/GrandCafe.jpg" alt="">
-            </a>
+              <img id="foto6" class="img-fluid" src="img/portfolio/zaal5.jpg" alt="">
+              <script>
+                $( "#foto6" ).hover(
+                function() {
+                  console.log("hover");
+                  $(this).attr("src", "img/portfolio/GrandCafe.jpg");
+                }, function() {
+                  $(this).attr("src", "img/portfolio/zaal5.jpg");
+                }
+              );
+              </script>
             <div class="portfolio-caption">
-              <h4>Grand Café</h4>
-              <!-- <p class="text-muted">Photography</p> -->
+              <h4>Grand Caf&eacute;</h4>
+              <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
         </div>
@@ -215,7 +250,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Time-lapse</h2>
+            <h2 class="section-heading text-uppercase">Timelapse</h2>
             <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
@@ -284,8 +319,8 @@
                     <h4 class="subheading"></h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">De Meeting hall, de oude congreszaal, heeft zijn voormalige functie terug van publieksruimte. Het is een interactieve ruimte waar bezoekers kennis kunnen maken met bedrijven, start-ups en opleidingen door middel van moderne technologieën zoals virtual reality en robots.
-                    Het Grandcafé behoudt zijn historische sfeer; het heeft wel een volledig gerobotiseerde staf en interactieve tafels waar bestellingen kunnen worden geplaatst. </p>
+                    <p class="text-muted">The Chain, de oude congreszaal, heeft zijn voormalige functie terug van publieksruimte. Het is een interactieve ruimte waar bezoekers kennis kunnen maken met bedrijven, start-ups en opleidingen door middel van moderne technologieën zoals virtual reality en robots.
+                    Het Grand café behoudt zijn historische sfeer; het heeft wel een volledig gerobotiseerde staf en interactieve tafels waar bestellingen kunnen worden geplaatst. </p>
                   </div>
                 </div>
               </li>
@@ -306,7 +341,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Bedrijven</h2>
-            <h3 class="section-subheading text-muted">Tekst bedrijven!!!</h3>
+            <h3 class="section-subheading text-muted">Our friends with benefits</h3>
           </div>
         </div>
         <div class="row">
@@ -503,213 +538,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -723,6 +551,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script>
+    function congres() {
+
+    }
+    </script>
 
   </body>
 
